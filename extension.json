@@ -1,0 +1,6 @@
+{
+  "id": "nestedCategoryBrowser",
+  "name": "Nested Category Browser Extension",
+  "srcdoc": "nested-category-browser.html",
+  "fieldTypes": ["Entries"]
+}
