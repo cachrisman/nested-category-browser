@@ -2,10 +2,12 @@
 
 This extension lets you display a nested tree of categories with checkboxes to display and select which categories are selected.
 
+![image](https://user-images.githubusercontent.com/6521666/36640958-3fde764a-1a7c-11e8-929b-56574bb6bec0.png)
+
 ## Requirements
 
-1. `category` content type with a `name` short text/symbol field and a `subcategories` multi-reference field.
-1. One `category` entry with the name `Root` which serves as the entry point into your category tree.
+1. A `category` content type with a bare minimum of a `name` short text/symbol field and a `subcategories` multi-reference field; you certainly can have any other fields you want.
+1. One `category` entry with the name `Root` which serves as the entry point into your category tree. You probably also want to make other categories which will be the actual categories shown.
 1. One or more other content types with a multi-reference field called `categories` (that name is not strictly necessary, but makes the most sense to me :-P ).
 1. The `contentful-cli` tool. If you don't have it, install it by running `yarn global add contentful-cli` or `npm -g install contentful-cli`. After installation run `contentful login` to authorize the `contentful-cli` tool to use your Contentful account.
 
